@@ -1,14 +1,14 @@
 #ifndef BigInteger_h
 #define BigInteger_h
 
-struct BigInteger {
-    struct Node * head;
-    int length;
-};
-
 struct Node {
     int data;
     struct Node * next;
+};
+
+struct BigInteger {
+    struct Node * head;
+    int length;
 };
 
 struct BigInteger initialize(char* str);
